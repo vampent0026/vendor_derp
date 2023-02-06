@@ -69,6 +69,8 @@
 #
 #   TARGET_FORCE_PREBUILT_KERNEL       = Optional, use TARGET_PREBUILT_KERNEL even if
 #                                          kernel sources are present
+#   TARGET_WITH_KERNEL_SU              = Optional, if true, build kernel with KernelSU
+#
 
 ifneq ($(TARGET_NO_KERNEL),true)
 ifneq ($(TARGET_NO_KERNEL_OVERRIDE),true)
@@ -267,6 +269,10 @@ endif
 
 ifneq ($(TARGET_KERNEL_ADDITIONAL_FLAGS),)
     KERNEL_MAKE_FLAGS += $(TARGET_KERNEL_ADDITIONAL_FLAGS)
+endif
+
+ifeq ($(TARGET_WITH_KERNEL_SU),true)
+    KERNEL_MAKE_FLAGS += CONFIG_WITH_KERNEL_SU=y
 endif
 
 # Internal implementation of make-kernel-target
