@@ -6,7 +6,6 @@ PRODUCT_PACKAGES += \
     Glimpse \
     NetworkStackOverlay \
     NetworkStackMainlineOverlay \
-    OmniStyle \
     Panic \
     ParallelSpace \
     Prospect \
