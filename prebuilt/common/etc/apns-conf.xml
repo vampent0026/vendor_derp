@@ -3264,6 +3264,7 @@
   <apn carrier="Smartfren4G SOS" mcc="510" mnc="28" apn="sos" type="emergency" user_visible="false" />
   <apn carrier="3 ID Internet" mcc="510" mnc="89" apn="3data" user="3data" password="3data" type="default,supl" />
   <apn carrier="3 ID MMS" mcc="510" mnc="89" apn="3mms" user="3mms" password="3mms" mmsc="http://mms.three.co.id" mmsproxy="10.4.0.10" mmsport="3128" type="mms" />
+  <apn carrier="Internet" mcc="515" mnc="66" apn="internet.dito.ph" type="default,mms,supl,hipri,fota,cbs,xcap" />
   <apn carrier="myGlobe Prepaid" mcc="515" mnc="02" apn="http.globe.com.ph" type="default,supl" />
   <apn carrier="myGlobe Postpaid" mcc="515" mnc="02" apn="internet.globe.com.ph" type="default,supl" />
   <apn carrier="myGlobe Connect" mcc="515" mnc="02" apn="www.globe.com.ph" proxy="203.177.042.214" port="8080" type="default,supl" />
